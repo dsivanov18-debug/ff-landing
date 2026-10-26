@@ -4,29 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Фулфилмент «Рассвет» — одежда на Wildberries и Ozon, Ижевск</title>
-<meta name="description" content="Фулфилмент «Рассвет» в Ижевске для производителей и продавцов одежды: приёмка, упаковка, маркировка и доставка на склад Wildberries — 25 ₽ за единицу. Первая поставка до 200 единиц бесплатно.">
+<meta name="description" content="Фулфилмент «Рассвет» в Ижевске для производителей и продавцов одежды: приёмка, ОТК, упаковка, маркировка «Честный знак» и доставка на склад Wildberries — 25 ₽ за единицу. Первая поставка до 200 единиц бесплатно.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f4ef;--card:#fff;--ink:#1b1d22;--muted:#5d6270;--line:#e3dfd6;--acc:#e8590c;--acc-ink:#fff;--soft:#fff1e6;--ok:#2f7d4a}
-@media (prefers-color-scheme:dark){:root{--bg:#15171b;--card:#1e2126;--ink:#eef0f3;--muted:#a3a9b5;--line:#30343b;--acc:#ff7a33;--acc-ink:#15171b;--soft:#2a2019;--ok:#5cc583}}
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1b1d22;--muted:#5d6270;--line:#e3dfd6;--acc:#e8590c;--acc-ink:#fff;--soft:#fff1e6;--ok:#2f7d4a;--no:#b42318}
+@media (prefers-color-scheme:dark){:root{--bg:#15171b;--card:#1e2126;--ink:#eef0f3;--muted:#a3a9b5;--line:#30343b;--acc:#ff7a33;--acc-ink:#15171b;--soft:#2a2019;--ok:#5cc583;--no:#ff8a7a}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:inherit}
+img{max-width:100%}
 .wrap{max-width:1080px;margin:0 auto;padding-inline:16px}
 header.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
-.logo{font-weight:800;letter-spacing:.02em}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:10px}
+.logo{font-weight:800;letter-spacing:.02em;text-decoration:none}
 .logo small{display:block;font-weight:600;color:var(--muted);font-size:12px;letter-spacing:0}
-.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);border:0;border-radius:10px;padding:12px 18px;font:700 16px Manrope,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+nav.menu{display:flex;gap:16px;font-weight:600;font-size:15px}
+nav.menu a{text-decoration:none;color:var(--muted)}
+nav.menu a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);border:0;border-radius:10px;padding:12px 18px;font:700 16px Manrope,system-ui,sans-serif;text-decoration:none;cursor:pointer;text-align:center}
 .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.small{padding:8px 12px;font-size:14px}
 .phone{font-weight:800;text-decoration:none;white-space:nowrap}
-section{padding-block:48px}
+section{padding-block:52px}
+section.alt{background:var(--card);border-block:1px solid var(--line)}
 h1{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:0 0 16px;text-wrap:balance}
-h2{font-size:clamp(22px,3.4vw,32px);margin:0 0 20px;text-wrap:balance}
+h2{font-size:clamp(22px,3.4vw,32px);margin:0 0 8px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 24px;max-width:65ch}
 .lead{font-size:18px;color:var(--muted);max-width:60ch}
 .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start}
+.ticks{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:6px}
+.ticks li:before{content:"✓";color:var(--acc);font-weight:800;margin-right:8px}
 .price-tag{background:var(--card);border:2px solid var(--acc);border-radius:16px;padding:22px}
 .price-tag b{font-size:52px;line-height:1;display:block;color:var(--acc)}
 .price-tag ul{margin:12px 0 0;padding-left:18px;color:var(--muted)}
@@ -36,18 +45,26 @@ h2{font-size:clamp(22px,3.4vw,32px);margin:0 0 20px;text-wrap:balance}
 .fact b{font-size:24px;display:block}
 .fact span{color:var(--muted);font-size:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
-.card h3{margin:0 0 6px;font-size:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0;display:flex;flex-direction:column;gap:6px}
+section.alt .card{background:var(--bg)}
+.card h3{margin:0;font-size:18px}
 .card p{margin:0;color:var(--muted)}
+.card .ico{font-size:26px;line-height:1}
+.card .more{margin-top:auto;padding-top:8px}
+.card .more a{color:var(--acc);font-weight:700;text-decoration:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-weight:600;font-size:15px}
 .tbl{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
 table{border-collapse:collapse;width:100%;min-width:560px}
 th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 td.num{white-space:nowrap;font-weight:800;font-variant-numeric:tabular-nums}
 tr.main td{background:var(--soft)}
+td.no{color:var(--no)} td.yes{color:var(--ok);font-weight:700}
 .note{color:var(--muted);font-size:14px;margin-top:10px}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.steps .card:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--acc);color:var(--acc-ink);font-weight:800;margin-bottom:8px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.steps .card:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--acc);color:var(--acc-ink);font-weight:800}
 .calc{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
 label{display:block;font-weight:600;margin:12px 0 6px}
 input,select,textarea{width:100%;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:16px Manrope,system-ui,sans-serif}
@@ -56,13 +73,21 @@ input,select,textarea{width:100%;padding:12px;border:1.5px solid var(--line);bor
 .total{font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--acc)}
 .formbox{background:var(--card);border:2px solid var(--acc);border-radius:16px;padding:22px}
 .ok{display:none;color:var(--ok);font-weight:700;margin-top:12px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
 summary{font-weight:700;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:14px}
-.hero>*,.calc>*,.facts>*,.grid3>*,.steps>*{min-width:0}
+.mobile-cta{display:none}
+.hero>*,.calc>*,.facts>*,.grid3>*,.grid2>*,.steps>*,.contacts>*{min-width:0}
 h1,h2{overflow-wrap:break-word}
-@media (max-width:860px){.hero,.calc{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.steps{grid-template-columns:1fr}header.top .btn{display:none}}
+@media (max-width:960px){nav.menu{display:none}}
+@media (max-width:860px){.hero,.calc,.contacts{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.grid3,.grid2{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}header.top .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);z-index:6}
+  .mobile-cta .btn{width:100%} body{padding-bottom:72px}}
 </style>
 </head>
 <body>
@@ -87,16 +112,25 @@ var CFG = {
 </script>
 
 <header class="top"><div class="wrap">
-  <div class="logo" data-cfg="company">Фулфилмент<small>Ижевск · одежда · Wildberries · Ozon</small></div>
+  <a class="logo" href="#" data-cfg="company">Фулфилмент<small>Ижевск · одежда · Wildberries · Ozon</small></a>
+  <nav class="menu">
+    <a href="#services">Услуги</a><a href="#price">Цены</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+  </nav>
   <a class="phone" data-cfg-phone href="#"></a>
-  <a class="btn" href="#form">Рассчитать поставку</a>
+  <a class="btn small" href="#form">Получить расчёт</a>
 </div></header>
 
 <main>
+<!-- 1. Первый экран -->
 <section><div class="wrap hero">
   <div>
     <h1>Фулфилмент для производителей и продавцов одежды на Wildberries и Ozon</h1>
-    <p class="lead">Шьёте сами, заказываете у цеха или перепродаёте — мы принимаем, упаковываем, маркируем и везём ваш товар на склад маркетплейса. Сами продаём одежду на WB и Ozon с 2019 года и знаем все требования к приёмке.</p>
+    <p class="lead">Шьёте сами, заказываете у цеха или перепродаёте — мы принимаем, проверяем, упаковываем, маркируем и везём ваш товар на склад маркетплейса.</p>
+    <ul class="ticks">
+      <li>Приёмка в день поступления товара</li>
+      <li>Отправки на склады WB и Ozon по графику, сборными машинами</li>
+      <li>Фотоотчёт и акт по каждой поставке</li>
+    </ul>
     <p class="gift">🎁 <b>Первая поставка до 200 единиц — бесплатно.</b> Приёмка, упаковка, стикер и доставка на склад WB за наш счёт. Плюс 14 дней хранения бесплатно.</p>
     <p><a class="btn" href="#form">Забрать бесплатную поставку</a> &nbsp; <a class="btn ghost" href="#price">Смотреть прайс</a></p>
   </div>
@@ -110,45 +144,78 @@ var CFG = {
       <li>формирование поставки и короба</li>
       <li>доставка на склад Wildberries</li>
     </ul>
+    <p class="note">Без абонплаты и депозитов. Расчёт — за 15 минут.</p>
   </div>
 </div>
 <div class="wrap facts">
   <div class="fact"><b>800 м²</b><span>свой склад в Ижевске, ул. 10 лет Октября, 44Б</span></div>
-  <div class="fact"><b>до 2000</b><span>заказов в день — берём объём без очередей</span></div>
-  <div class="fact"><b>одежда</b><span>ОТК, отпаривание, перешив этикеток силами своего производства</span></div>
-  <div class="fact"><b>WB + Ozon</b><span>FBO и FBS, «Честный знак», возвраты</span></div>
+  <div class="fact"><b>до 2000</b><span>единиц и заказов в день — берём объём без очередей</span></div>
+  <div class="fact"><b>с 2019</b><span>сами продаём одежду на Wildberries и Ozon</span></div>
+  <div class="fact"><b>своё шитьё</b><span>ОТК, отпаривание, перешив этикеток силами своего производства</span></div>
 </div></section>
 
-<section><div class="wrap">
+<!-- 2. Для кого -->
+<section class="alt"><div class="wrap">
   <h2>Для кого</h2>
+  <p class="sub">Работаем с любой одеждой и текстилем — от первой партии в 50 вещей до потока в тысячи единиц в день.</p>
   <div class="grid3">
-    <div class="card"><h3>Швейные цеха и производства</h3><p>Шьёте — а упаковка, маркировка и поставки отнимают людей и время. Отдайте их нам, а цех пусть шьёт.</p></div>
-    <div class="card"><h3>Бренды одежды</h3><p>Свои коллекции на WB и Ozon: стабильные поставки, контроль качества, фото брака, отчёт по каждой партии.</p></div>
-    <div class="card"><h3>Селлеры и перепродавцы</h3><p>Закупаете в Садоводе, Китае, у производителей — привозите к нам, мы доведём до склада маркетплейса.</p></div>
-    <div class="card"><h3>Начинающие продавцы</h3><p>Поможем с первой поставкой: требования WB к упаковке, маркировка «Честный знак», окна приёмки.</p></div>
-    <div class="card"><h3>Ателье и мастерские</h3><p>Малые партии тоже берём: верхняя одежда, трикотаж, детская, бельё, спорт, спецодежда.</p></div>
-    <div class="card"><h3>Продавцы из других городов</h3><p>Пермь, Казань, Киров, Уфа: привезите партию к нам — дальше отправим сборной машиной на склад WB.</p></div>
+    <div class="card"><div class="ico">🧵</div><h3>Швейные цеха и производства</h3><p>Упаковка, маркировка и поставки отнимают людей и время. Отдайте их нам — цех пусть шьёт.</p></div>
+    <div class="card"><div class="ico">🏷️</div><h3>Бренды одежды</h3><p>Стабильные поставки коллекций, контроль качества, фото брака, отчёт по каждой партии.</p></div>
+    <div class="card"><div class="ico">📦</div><h3>Селлеры и перепродавцы</h3><p>Закупаете у производителей, на рынках или в Китае — привозите к нам, мы доведём до склада маркетплейса.</p></div>
+    <div class="card"><div class="ico">🚀</div><h3>Начинающие продавцы</h3><p>Поможем с первой поставкой: требования WB к упаковке, «Честный знак», окна приёмки, создание поставки.</p></div>
+    <div class="card"><div class="ico">✂️</div><h3>Ателье и мастерские</h3><p>Малые партии тоже берём: верхняя одежда, трикотаж, детская, бельё, спорт, спецодежда.</p></div>
+    <div class="card"><div class="ico">🚚</div><h3>Продавцы из других городов</h3><p>Пермь, Казань, Киров, Уфа: привезите партию к нам — дальше отправим сборной машиной на склад маркетплейса.</p></div>
   </div>
 </div></section>
 
-<section style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
-  <h2>Почему к нам переходят от других фулфилментов</h2>
+<!-- 3. Услуги под ключ -->
+<section id="services"><div class="wrap">
+  <h2>Услуги под ключ</h2>
+  <p class="sub">Берём на себя всё, что происходит с товаром между вашим цехом и складом маркетплейса.</p>
   <div class="grid3">
-    <div class="card"><h3>Мы сами селлеры</h3><p>Продаём одежду на Wildberries и Ozon каждый день. Упакуем так, как упаковываем свой товар.</p></div>
-    <div class="card"><h3>Специализация — одежда</h3><p>Проверим качество, отпарим, перешьём или добавим бирку — у нас своё швейное производство.</p></div>
-    <div class="card"><h3>Прозрачная цена</h3><p>Одна цена за единицу до склада WB. Без абонплаты и скрытых доплат за «короб» и «макет».</p></div>
-    <div class="card"><h3>Скорость</h3><p>Приёмка в день поступления, поставка — по ближайшему окну склада.</p></div>
-    <div class="card"><h3>Отчёт по каждой поставке</h3><p>Сколько принято, упаковано, отгружено, брак — с фото. Остатки онлайн.</p></div>
-    <div class="card"><h3>Ответственность по договору</h3><p>Договор хранения, акты приёмки, материальная ответственность за товар.</p></div>
+    <div class="card"><div class="ico">📥</div><h3>Приёмка и пересчёт</h3><p>Принимаем товар в день поступления, пересчитываем по накладной, сверяем размеры и артикулы, составляем акт.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">🔍</div><h3>ОТК и отбраковка</h3><p>Проверяем швы, пятна, фурнитуру и размеры. Брак откладываем и показываем на фото — на склад WB едет только целое.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">🏷️</div><h3>Маркировка</h3><p>Стикеры со штрихкодом WB и Ozon, коды «Честный знак», ввод в оборот и вывод при FBS.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">🎁</div><h3>Упаковка и комплектация</h3><p>Пакет с клапаном, ВПП, вложения, бирки, наборы и комплекты по вашему заданию.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">🚚</div><h3>Поставки FBO</h3><p>Создаём поставку, ловим окно приёмки, формируем короба и везём на склады Wildberries и Ozon.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">⚡</div><h3>FBS — сборка заказов</h3><p>Храним товар у себя, собираем заказы каждый день и передаём в сортировочный центр маркетплейса.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">↩️</div><h3>Возвраты</h3><p>Забираем возвраты, проверяем, переупаковываем годный товар и возвращаем в продажу.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">🏬</div><h3>Ответственное хранение</h3><p>Храним на стеллажах по артикулам и размерам. Первые 14 дней — бесплатно.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+    <div class="card"><div class="ico">🪡</div><h3>Доработка одежды</h3><p>Отпаривание, перешив или добавление этикеток и бирок, мелкий ремонт — в нашем швейном цехе.</p><div class="more"><a href="#form">Заказать →</a></div></div>
+  </div>
+  <h3 style="margin-top:28px">Дополнительно</h3>
+  <div class="chips">
+    <span class="chip">Забор груза по Ижевску</span><span class="chip">Фото товара для карточек</span><span class="chip">Вложение листовок</span>
+    <span class="chip">Переупаковка после возврата</span><span class="chip">Формирование наборов</span><span class="chip">Помощь с личным кабинетом WB/Ozon</span>
   </div>
 </div></section>
 
+<!-- 4. Сравнение -->
+<section class="alt"><div class="wrap">
+  <h2>Сами или с «Рассветом»</h2>
+  <p class="sub">Что меняется, когда поставками занимаемся мы.</p>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Сами</th><th>С «Рассветом»</th></tr></thead>
+    <tbody>
+      <tr><td>Люди на упаковке</td><td class="no">Свои сотрудники, отпуска и больничные</td><td class="yes">Наша смена, до 2000 единиц в день</td></tr>
+      <tr><td>Место</td><td class="no">Коробки в цеху и офисе</td><td class="yes">Склад 800 м², стеллажи по артикулам</td></tr>
+      <tr><td>Доставка на склад WB</td><td class="no">Отдельная машина на каждую партию</td><td class="yes">Сборные рейсы — дешевле на единицу</td></tr>
+      <tr><td>Ошибки и «брак на складе»</td><td class="no">Штрафы за упаковку и стикеры</td><td class="yes">Упаковываем по требованиям, проверка перед отправкой</td></tr>
+      <tr><td>Контроль</td><td class="no">«Где коробки?» — звонки и переписки</td><td class="yes">Фотоотчёт и акт по каждой поставке</td></tr>
+      <tr><td>Цена</td><td class="no">ЗП + аренда + материалы + машина</td><td class="yes">25 ₽ за единицу до склада WB</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- 5. Прайс -->
 <section id="price"><div class="wrap">
-  <h2>Прайс</h2>
+  <h2>Цены</h2>
+  <p class="sub">Одна понятная цена до склада WB. Без абонплаты, депозитов и доплат за «короб» и «макет».</p>
   <div class="tbl"><table>
     <thead><tr><th>Услуга</th><th>Что входит</th><th>Цена</th></tr></thead>
     <tbody>
       <tr class="main"><td><b>FBO под ключ до склада WB</b></td><td>Приёмка, пересчёт, упаковка в пакет (1 слой), стикер ШК, короб, поставка, доставка на склад Wildberries</td><td class="num">25 ₽ / ед.</td></tr>
+      <tr class="main"><td><b>Первая поставка</b></td><td>То же для новых клиентов, до 200 единиц</td><td class="num">0 ₽</td></tr>
       <tr><td>FBO под ключ до склада Ozon</td><td>То же для Ozon</td><td class="num">по запросу</td></tr>
       <tr><td>FBS — сборка заказа</td><td>Хранение у нас, сборка, упаковка, передача в сортировочный центр</td><td class="num">от 35 ₽ / заказ</td></tr>
       <tr><td>Маркировка «Честный знак»</td><td>Печать и нанесение кода</td><td class="num">5 ₽ / ед.</td></tr>
@@ -158,12 +225,14 @@ var CFG = {
       <tr><td>Вложение (листовка, открытка)</td><td>—</td><td class="num">2 ₽ / ед.</td></tr>
       <tr><td>Хранение</td><td>Первые 14 дней — бесплатно</td><td class="num">от 0,1 ₽ / ед. в сутки</td></tr>
       <tr><td>Возвраты</td><td>Приёмка, осмотр, переупаковка</td><td class="num">от 20 ₽ / ед.</td></tr>
+      <tr><td>Забор груза по Ижевску</td><td>Своим транспортом</td><td class="num">по запросу</td></tr>
     </tbody>
   </table></div>
-  <p class="note">Цена 25 ₽ действует для одежды и текстиля до 5 л в упаковке, при поставке от 300 единиц. Склады назначения и график отправок уточняем при расчёте. Не является публичной офертой.</p>
+  <p class="note">Цена 25 ₽ — для одежды и текстиля до 5 л в упаковке, при поставке от 300 единиц. Для меньших партий считаем отдельно. Склады назначения и график отправок согласуем при расчёте. Не является публичной офертой.</p>
 </div></section>
 
-<section style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap calc">
+<!-- 6. Калькулятор -->
+<section class="alt"><div class="wrap calc">
   <div>
     <h2>Посчитайте поставку</h2>
     <label for="qty">Сколько единиц в месяц</label>
@@ -180,20 +249,51 @@ var CFG = {
   </div>
 </div></section>
 
-<section><div class="wrap">
+<!-- 7. Как работаем -->
+<section id="how"><div class="wrap">
   <h2>Как начинаем работу</h2>
+  <p class="sub">От заявки до первой поставки на склад WB — обычно 2–3 дня.</p>
   <div class="steps">
     <div class="card"><h3>Заявка</h3><p>Оставляете контакты — перезваниваем в течение 15 минут в рабочее время.</p></div>
-    <div class="card"><h3>Расчёт и договор</h3><p>Считаем под ваш товар, подписываем договор за день.</p></div>
-    <div class="card"><h3>Приёмка</h3><p>Привозите товар или заберём сами по Ижевску.</p></div>
-    <div class="card"><h3>Поставка на WB</h3><p>Упаковываем, маркируем, везём на склад. Отчёт с фото.</p></div>
+    <div class="card"><h3>Расчёт</h3><p>Уточняем товар, объём и склады, присылаем расчёт в Telegram, WhatsApp или на почту.</p></div>
+    <div class="card"><h3>Договор</h3><p>Подписываем договор за один день — можно по ЭДО.</p></div>
+    <div class="card"><h3>Приёмка</h3><p>Привозите товар или заберём сами по Ижевску. Пересчитываем, проверяем, составляем акт.</p></div>
+    <div class="card"><h3>Подготовка и поставка</h3><p>Маркируем, упаковываем, создаём поставку и везём на склад маркетплейса.</p></div>
+    <div class="card"><h3>Отчёт и оплата</h3><p>Присылаем фотоотчёт и акт выполненных работ. Оплата — по факту.</p></div>
   </div>
 </div></section>
 
-<section id="form" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap calc">
+<!-- 8. Почему мы -->
+<section class="alt"><div class="wrap">
+  <h2>Почему «Рассвет»</h2>
+  <div class="grid3">
+    <div class="card"><h3>Мы сами селлеры</h3><p>Продаём одежду на Wildberries и Ozon с 2019 года. Упакуем так, как упаковываем свой товар.</p></div>
+    <div class="card"><h3>Своё швейное производство</h3><p>Понимаем одежду изнутри: проверим качество, отпарим, перешьём этикетку.</p></div>
+    <div class="card"><h3>Прозрачная цена</h3><p>Одна цена за единицу до склада WB, оплата по факту выполненных работ.</p></div>
+    <div class="card"><h3>Скорость</h3><p>Приёмка в день поступления, поставка — по ближайшему окну склада.</p></div>
+    <div class="card"><h3>Отчёт по каждой поставке</h3><p>Сколько принято, упаковано, отгружено и забраковано — с фото.</p></div>
+    <div class="card"><h3>Ответственность по договору</h3><p>Договор хранения, акты приёмки и передачи, материальная ответственность за товар.</p></div>
+  </div>
+</div></section>
+
+<!-- 9. Фото склада (картинки появятся, когда положите файлы foto1.jpg … foto4.jpg рядом с этим файлом) -->
+<section id="photos" hidden><div class="wrap">
+  <h2>Наш склад</h2>
+  <p class="sub">Ижевск, ул. 10 лет Октября, 44Б. Приезжайте посмотреть — покажем, как работаем.</p>
+  <div class="gallery">
+    <img src="foto1.jpg" alt="Склад фулфилмента «Рассвет»" loading="lazy">
+    <img src="foto2.jpg" alt="Стеллажи с товаром" loading="lazy">
+    <img src="foto3.jpg" alt="Упаковка одежды" loading="lazy">
+    <img src="foto4.jpg" alt="Подготовка поставки на Wildberries" loading="lazy">
+  </div>
+</div></section>
+
+<!-- 10. Заявка -->
+<section id="form"><div class="wrap calc">
   <div>
     <h2>Заберите бесплатную первую поставку</h2>
-    <p class="lead">До 200 единиц — приёмка, упаковка, стикер и доставка на склад WB за наш счёт, плюс 14 дней хранения бесплатно. Оставьте заявку — ответим в течение 15 минут в рабочее время.</p>
+    <p class="lead">До 200 единиц — приёмка, упаковка, стикер и доставка на склад WB за наш счёт, плюс 14 дней хранения бесплатно.</p>
+    <p class="sub" style="margin-top:14px">Для точного расчёта пригодится: что за товар, сколько единиц в месяц, куда отгружаете (WB / Ozon, FBO / FBS), нужна ли маркировка «Честный знак».</p>
     <p data-contact-line>Или сразу: <a class="phone" data-cfg-phone href="#"></a> &nbsp; <a data-cfg-tg href="#">написать в Telegram</a></p>
   </div>
   <form class="formbox" id="lead" novalidate>
@@ -203,32 +303,53 @@ var CFG = {
     <select id="f-mp" name="mp"><option>Wildberries</option><option>Ozon</option><option>WB и Ozon</option><option>Пока не продаю</option></select>
     <label for="f-vol">Сколько единиц в месяц</label>
     <select id="f-vol" name="volume"><option>до 500</option><option>500–2 000</option><option>2 000–10 000</option><option>больше 10 000</option></select>
-    <label for="f-cat">Что за товар</label><input id="f-cat" name="category" placeholder="например, женская одежда">
+    <label for="f-cat">Что за товар</label><input id="f-cat" name="category" placeholder="например, женская верхняя одежда">
     <label class="chk"><input type="checkbox" id="f-agree" required> Согласен на обработку персональных данных для связи по заявке</label>
     <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
     <button class="btn" type="submit" style="width:100%;margin-top:10px">Получить расчёт</button>
     <div class="ok" id="ok">Спасибо! Перезвоним в течение 15 минут в рабочее время.</div>
-    <div class="note" id="err" style="display:none;color:#c0392b"></div>
+    <div class="note" id="err" style="display:none;color:var(--no)"></div>
   </form>
 </div></section>
 
-<section><div class="wrap">
+<!-- 11. Вопросы -->
+<section id="faq" class="alt"><div class="wrap">
   <h2>Частые вопросы</h2>
-  <details><summary>Какие склады Wildberries входят в цену 25 ₽?</summary><p>Склад назначения и график отправок согласуем при расчёте. Отправляем регулярно, сборными машинами — поэтому цена за единицу ниже, чем при отдельной доставке.</p></details>
-  <details><summary>Что значит «первая поставка бесплатно»?</summary><p>Для нового клиента первая партия до 200 единиц одежды: приёмка, упаковка в пакет, стикер и доставка на склад Wildberries — 0 ₽. Маркировка «Честный знак» и доп. услуги — по прайсу. Одна бесплатная поставка на клиента.</p></details>
-  <details><summary>Какую одежду берёте?</summary><p>Любую: верхняя одежда, платья, трикотаж, детская, бельё, спортивная, спецодежда, текстиль и аксессуары.</p></details>
-  <details><summary>Есть ли минимальный объём?</summary><p>Цена 25 ₽ — от 300 единиц в поставке. Для меньших партий посчитаем отдельно.</p></details>
-  <details><summary>Работаете с Ozon и FBS?</summary><p>Да: FBO на склады Ozon и FBS со сборкой заказов с нашего склада.</p></details>
-  <details><summary>Кто отвечает, если товар потерялся или испорчен?</summary><p>Мы — по договору хранения и актам приёмки. Каждая поставка с фотоотчётом.</p></details>
+  <details><summary>Что значит «первая поставка бесплатно»?</summary><p>Для нового клиента первая партия до 200 единиц одежды: приёмка, упаковка в пакет, стикер и доставка на склад Wildberries — 0 ₽. Маркировка «Честный знак» и дополнительные услуги — по прайсу. Одна бесплатная поставка на клиента.</p></details>
+  <details><summary>Какую одежду берёте?</summary><p>Любую одежду и текстиль: верхняя одежда, платья, трикотаж, детская, бельё, спортивная, спецодежда, домашний текстиль, аксессуары.</p></details>
+  <details><summary>Есть ли минимальный объём?</summary><p>Цена 25 ₽ — от 300 единиц в поставке. Меньшие партии тоже берём, считаем отдельно.</p></details>
+  <details><summary>Какие склады Wildberries входят в цену?</summary><p>Склад назначения и график отправок согласуем при расчёте. Отправляем сборными машинами по графику — поэтому цена за единицу ниже, чем при отдельной доставке.</p></details>
+  <details><summary>Работаете с Ozon и FBS?</summary><p>Да: FBO на склады Ozon и FBS — храним товар у себя, собираем заказы каждый день и передаём в сортировочный центр.</p></details>
+  <details><summary>Я не из Ижевска — можно работать?</summary><p>Да. Привезите партию транспортной компанией на наш склад — дальше всё сделаем сами и пришлём отчёт.</p></details>
+  <details><summary>Как оформляется работа и оплата?</summary><p>По договору, можно через ЭДО. Оплата — по факту выполненных работ, по акту. Без абонплаты и депозитов.</p></details>
+  <details><summary>Кто отвечает, если товар потерялся или испорчен?</summary><p>Мы — по договору хранения и актам приёмки. Каждая поставка — с фотоотчётом.</p></details>
   <details><summary>Можно приехать посмотреть склад?</summary><p>Да, по договорённости: Ижевск, ул. 10 лет Октября, 44Б.</p></details>
+</div></section>
+
+<!-- 12. Контакты -->
+<section id="contacts"><div class="wrap contacts">
+  <div>
+    <h2>Контакты</h2>
+    <p><b>Склад:</b> Удмуртская Республика, Ижевск, ул. 10 лет Октября, 44Б</p>
+    <p><b>Часы работы:</b> пн–пт 9:00–19:00, сб 10:00–16:00</p>
+    <p data-contact-line><b>Связаться:</b> <a class="phone" data-cfg-phone href="#"></a> &nbsp; <a data-cfg-tg href="#">Telegram</a></p>
+    <p><a class="btn ghost" href="https://yandex.ru/maps/?text=%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%2C%20%D1%83%D0%BB.%2010%20%D0%BB%D0%B5%D1%82%20%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%2C%2044%D0%91" target="_blank" rel="noopener">Открыть на Яндекс Картах</a></p>
+  </div>
+  <div class="card">
+    <h3>Остались вопросы?</h3>
+    <p>Оставьте заявку — менеджер перезвонит, ответит на вопросы и посчитает стоимость под ваш товар.</p>
+    <p class="more"><a class="btn" href="#form">Оставить заявку</a></p>
+  </div>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <div data-cfg="legal">ООО «НАЗВАНИЕ», ИНН …, ОГРН …</div>
+  <div data-cfg="legal"></div>
   <div>Склад: Ижевск, ул. 10 лет Октября, 44Б &nbsp; <a data-cfg-phone href="#"></a></div>
   <div>Информация на сайте не является публичной офертой.</div>
 </div></footer>
+
+<div class="mobile-cta"><a class="btn" href="#form">Получить расчёт</a></div>
 
 <script>
 (function () {
@@ -244,7 +365,15 @@ var CFG = {
   });
   document.querySelectorAll('[data-cfg-tg]').forEach(function (e) { if (CFG.telegram) e.href = CFG.telegram; else e.hidden = true; });
   document.querySelectorAll('[data-contact-line]').forEach(function (e) { if (!hasPhone && !CFG.telegram) e.hidden = true; });
-  CFG.phoneShow = hasPhone ? CFG.phone : 'через форму на сайте';
+  CFG.phoneShow = hasPhone ? CFG.phone : '';
+
+  // фото склада: блок появится, когда загрузится хотя бы одно фото
+  var photos = document.getElementById('photos');
+  photos.querySelectorAll('img').forEach(function (img) {
+    var show = function () { photos.hidden = false; };
+    img.addEventListener('load', show); img.addEventListener('error', function () { img.remove(); });
+    if (img.complete && img.naturalWidth) show();
+  });
 
   // Яндекс Метрика (если указан номер)
   if (CFG.metrikaId) {
@@ -252,17 +381,17 @@ var CFG = {
     ym(CFG.metrikaId, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
   }
   var goal = function (g) { try { if (CFG.metrikaId) ym(CFG.metrikaId, 'reachGoal', g); } catch (e) {} };
-  document.querySelectorAll('a[href^="tel:"], [data-cfg-phone]').forEach(function (a) { a.addEventListener('click', function () { goal('phone_click'); }); });
+  document.querySelectorAll('[data-cfg-phone]').forEach(function (a) { a.addEventListener('click', function () { goal('phone_click'); }); });
 
   // калькулятор
   var fmt = function (n) { return Math.round(n).toLocaleString('ru-RU') + ' ₽'; };
+  var cz = document.getElementById('cz'), otk = document.getElementById('otk'), steam = document.getElementById('steam');
   var calc = function () {
     var q = Math.max(0, Number(document.getElementById('qty').value) || 0);
     var per = 25 + (cz.checked ? 5 : 0) + (otk.checked ? 5 : 0) + (steam.checked ? 25 : 0);
     document.getElementById('total').textContent = fmt(q * per);
     document.getElementById('per').textContent = per + ' ₽ за единицу с доставкой до склада WB';
   };
-  var cz = document.getElementById('cz'), otk = document.getElementById('otk'), steam = document.getElementById('steam');
   ['qty', 'cz', 'otk', 'steam'].forEach(function (id) { document.getElementById(id).addEventListener('input', calc); });
   calc();
 
@@ -283,7 +412,8 @@ var CFG = {
     var done = function () { form.querySelector('button').disabled = true; document.getElementById('ok').style.display = 'block'; goal('lead'); };
     if (!CFG.formEndpoint) { done(); return; }
     fetch(CFG.formEndpoint, { method: 'POST', mode: 'no-cors', body: data }).then(done).catch(function () {
-      err.textContent = 'Не получилось отправить. Попробуйте ещё раз через минуту' + (CFG.phoneShow.charAt(0) === '+' ? ' или позвоните: ' + CFG.phoneShow : '') + '.'; err.style.display = 'block';
+      err.textContent = 'Не получилось отправить. Попробуйте ещё раз через минуту' + (CFG.phoneShow ? ' или позвоните: ' + CFG.phoneShow : '') + '.';
+      err.style.display = 'block';
     });
   });
 })();
