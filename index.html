@@ -6,7 +6,7 @@
 <title>Фулфилмент «Рассвет» — одежда на Wildberries и Ozon, Ижевск</title>
 <meta name="description" content="Фулфилмент «Рассвет» в Ижевске для производителей и продавцов одежды: приёмка, ОТК, упаковка, маркировка «Честный знак» и доставка на склады Wildberries и Ozon — от 25 ₽ за единицу. Первая поставка до 200 единиц бесплатно, хранение первый месяц бесплатно.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f4ef;--card:#fff;--ink:#1b1d22;--muted:#5d6270;--line:#e3dfd6;--acc:#e8590c;--acc-ink:#fff;--soft:#fff1e6;--ok:#2f7d4a;--no:#b42318}
 @media (prefers-color-scheme:dark){:root{--bg:#15171b;--card:#1e2126;--ink:#eef0f3;--muted:#a3a9b5;--line:#30343b;--acc:#ff7a33;--acc-ink:#15171b;--soft:#2a2019;--ok:#5cc583;--no:#ff8a7a}}
@@ -39,6 +39,15 @@ h2{font-size:clamp(22px,3.4vw,32px);margin:0 0 8px;text-wrap:balance}
 .price-tag{background:var(--card);border:2px solid var(--acc);border-radius:16px;padding:22px}
 .price-tag b{font-size:52px;line-height:1;display:block;color:var(--acc)}
 .price-tag ul{margin:12px 0 0;padding-left:18px;color:var(--muted)}
+.promo{position:relative;margin:6px 0 20px;padding:22px 22px 24px;border-radius:20px;color:#fff;background:linear-gradient(135deg,#ff5a00 0%,#ff2d55 55%,#c2185b 100%);box-shadow:0 14px 34px rgba(232,89,12,.35);max-width:560px;overflow:hidden}
+.promo:after{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.12)}
+.promo-badge{display:inline-block;background:#ffe14d;color:#1b1d22;font-weight:800;font-size:14px;padding:5px 12px;border-radius:999px;transform:rotate(-2deg)}
+.promo-big{font-family:Unbounded,Manrope,system-ui,sans-serif;font-weight:900;font-size:clamp(32px,6vw,52px);line-height:1.02;margin:12px 0 10px;text-transform:uppercase;letter-spacing:-.01em;text-shadow:0 2px 0 rgba(0,0,0,.12)}
+.promo-text{font-size:17px;max-width:46ch;position:relative;z-index:1}
+.promo-btn{display:inline-block;margin-top:14px;background:#fff;color:#d6336c;font:800 17px Manrope,system-ui,sans-serif;padding:13px 20px;border-radius:12px;text-decoration:none;position:relative;z-index:1;animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@media (prefers-reduced-motion:reduce){.promo-btn{animation:none}}
+#form h2{font-family:Unbounded,Manrope,system-ui,sans-serif;font-weight:900;color:var(--acc)}
 .gift{background:var(--soft);border-left:4px solid var(--acc);border-radius:8px;padding:12px 14px;max-width:60ch}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
 .fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
@@ -106,15 +115,15 @@ var CFG = {
   // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
   telegram: '',          // ссылка на Telegram-бота (сделаем позже); пусто — кнопка Telegram скрыта
-  formEndpoint: '',      // ссылка /exec из Шага 2 (впишу сам, когда пришлёте)
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbxxXnWquoZcxASZcJUpLX0xN8epX0Ic7bnGPlkPJ-DaPzRU523x3-S_3nNmwNQLyEpHCA/exec',   // заявки → таблица «Лиды ФФ»
   metrikaId: 0           // номер счётчика Яндекс Метрики (впишу сам)
 };
 </script>
 
 <header class="top"><div class="wrap">
-  <a class="logo" href="#" data-cfg="company">Фулфилмент<small>Ижевск · одежда · Wildberries · Ozon</small></a>
+  <a class="logo" href="#" data-cfg="company">Фулфилмент «Рассвет»<small>Ижевск · одежда · Wildberries · Ozon</small></a>
   <nav class="menu">
-    <a href="#services">Услуги</a><a href="#price">Цены</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+    <a href="#why">Преимущества</a><a href="#services">Услуги</a><a href="#price">Цены</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
   </nav>
   <a class="phone" data-cfg-phone href="#"></a>
   <a class="btn small" href="#form">Получить расчёт</a>
@@ -131,8 +140,8 @@ var CFG = {
       <li>Отправки на склады WB и Ozon по графику, сборными машинами</li>
       <li>Фотоотчёт и акт по каждой поставке</li>
     </ul>
-    <p class="gift">🎁 <b>Первая поставка до 200 единиц — бесплатно.</b> Приёмка, упаковка, стикер и доставка на склад WB или Ozon за наш счёт. Плюс первый месяц хранения бесплатно.</p>
-    <p><a class="btn" href="#form">Забрать бесплатную поставку</a> &nbsp; <a class="btn ghost" href="#price">Смотреть прайс</a></p>
+    <div class="promo"><div class="promo-badge">🎁 Акция для новых клиентов</div><div class="promo-big">200 товаров<br>бесплатно</div><div class="promo-text">Первая поставка за наш счёт: приёмка, упаковка, стикер и доставка на склад <b>WB или Ozon</b>. Плюс <b>первый месяц хранения бесплатно</b>.</div><a class="promo-btn" href="#form">Забрать 200 бесплатно →</a></div>
+    <p><a class="btn" href="#form">Получить расчёт</a> &nbsp; <a class="btn ghost" href="#price">Смотреть прайс</a></p>
   </div>
   <div class="price-tag">
     <span>Под ключ до склада WB и Ozon</span>
@@ -152,6 +161,36 @@ var CFG = {
   <div class="fact"><b>до 2000</b><span>единиц и заказов в день — берём объём без очередей</span></div>
   <div class="fact"><b>с 2019</b><span>сами продаём одежду на Wildberries и Ozon</span></div>
   <div class="fact"><b>своё шитьё</b><span>ОТК, отпаривание, перешив этикеток силами своего производства</span></div>
+</div></section>
+
+<!-- 4. Сравнение -->
+<section class="alt" id="why"><div class="wrap">
+  <h2>Сами или с «Рассветом»</h2>
+  <p class="sub">Что меняется, когда поставками занимаемся мы.</p>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Сами</th><th>С «Рассветом»</th></tr></thead>
+    <tbody>
+      <tr><td>Люди на упаковке</td><td class="no">Свои сотрудники, отпуска и больничные</td><td class="yes">Наша смена, до 2000 единиц в день</td></tr>
+      <tr><td>Место</td><td class="no">Коробки в цеху и офисе</td><td class="yes">Склад 800 м², стеллажи по артикулам</td></tr>
+      <tr><td>Доставка на склады WB и Ozon</td><td class="no">Отдельная машина на каждую партию</td><td class="yes">Сборные рейсы — дешевле на единицу</td></tr>
+      <tr><td>Ошибки и «брак на складе»</td><td class="no">Штрафы за упаковку и стикеры</td><td class="yes">Упаковываем по требованиям, проверка перед отправкой</td></tr>
+      <tr><td>Контроль</td><td class="no">«Где коробки?» — звонки и переписки</td><td class="yes">Фотоотчёт и акт по каждой поставке</td></tr>
+      <tr><td>Цена</td><td class="no">ЗП + аренда + материалы + машина</td><td class="yes">от 25 ₽ за единицу до склада WB и Ozon</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- 8. Почему мы -->
+<section><div class="wrap">
+  <h2>Почему «Рассвет»</h2>
+  <div class="grid3">
+    <div class="card"><h3>Мы сами селлеры</h3><p>Продаём одежду на Wildberries и Ozon с 2019 года. Упакуем так, как упаковываем свой товар.</p></div>
+    <div class="card"><h3>Своё швейное производство</h3><p>Понимаем одежду изнутри: проверим качество, отпарим, перешьём этикетку.</p></div>
+    <div class="card"><h3>Прозрачная цена</h3><p>Одна цена за единицу до склада WB и Ozon, оплата по факту выполненных работ по акту.</p></div>
+    <div class="card"><h3>Скорость</h3><p>Приёмка в день поступления, поставка — по ближайшему окну склада.</p></div>
+    <div class="card"><h3>Отчёт по каждой поставке</h3><p>Сколько принято, упаковано, отгружено и забраковано — с фото.</p></div>
+    <div class="card"><h3>Ответственность по договору</h3><p>Договор хранения, акты приёмки и передачи, материальная ответственность за товар.</p></div>
+  </div>
 </div></section>
 
 <!-- 2. Для кого -->
@@ -188,23 +227,6 @@ var CFG = {
     <span class="chip">Забор груза по Ижевску</span><span class="chip">Фото товара для карточек</span><span class="chip">Вложение листовок</span>
     <span class="chip">Переупаковка после возврата</span><span class="chip">Формирование наборов</span><span class="chip">Помощь с личным кабинетом WB/Ozon</span>
   </div>
-</div></section>
-
-<!-- 4. Сравнение -->
-<section class="alt"><div class="wrap">
-  <h2>Сами или с «Рассветом»</h2>
-  <p class="sub">Что меняется, когда поставками занимаемся мы.</p>
-  <div class="tbl"><table>
-    <thead><tr><th></th><th>Сами</th><th>С «Рассветом»</th></tr></thead>
-    <tbody>
-      <tr><td>Люди на упаковке</td><td class="no">Свои сотрудники, отпуска и больничные</td><td class="yes">Наша смена, до 2000 единиц в день</td></tr>
-      <tr><td>Место</td><td class="no">Коробки в цеху и офисе</td><td class="yes">Склад 800 м², стеллажи по артикулам</td></tr>
-      <tr><td>Доставка на склады WB и Ozon</td><td class="no">Отдельная машина на каждую партию</td><td class="yes">Сборные рейсы — дешевле на единицу</td></tr>
-      <tr><td>Ошибки и «брак на складе»</td><td class="no">Штрафы за упаковку и стикеры</td><td class="yes">Упаковываем по требованиям, проверка перед отправкой</td></tr>
-      <tr><td>Контроль</td><td class="no">«Где коробки?» — звонки и переписки</td><td class="yes">Фотоотчёт и акт по каждой поставке</td></tr>
-      <tr><td>Цена</td><td class="no">ЗП + аренда + материалы + машина</td><td class="yes">от 25 ₽ за единицу до склада WB и Ozon</td></tr>
-    </tbody>
-  </table></div>
 </div></section>
 
 <!-- 5. Прайс -->
@@ -259,19 +281,6 @@ var CFG = {
     <div class="card"><h3>Приёмка</h3><p>Привозите товар или заберём сами по Ижевску. Пересчитываем, проверяем, составляем акт.</p></div>
     <div class="card"><h3>Подготовка и поставка</h3><p>Маркируем, упаковываем, создаём поставку и везём на склад маркетплейса.</p></div>
     <div class="card"><h3>Отчёт и оплата</h3><p>Присылаем фотоотчёт и акт выполненных работ. Оплата — по факту.</p></div>
-  </div>
-</div></section>
-
-<!-- 8. Почему мы -->
-<section class="alt"><div class="wrap">
-  <h2>Почему «Рассвет»</h2>
-  <div class="grid3">
-    <div class="card"><h3>Мы сами селлеры</h3><p>Продаём одежду на Wildberries и Ozon с 2019 года. Упакуем так, как упаковываем свой товар.</p></div>
-    <div class="card"><h3>Своё швейное производство</h3><p>Понимаем одежду изнутри: проверим качество, отпарим, перешьём этикетку.</p></div>
-    <div class="card"><h3>Прозрачная цена</h3><p>Одна цена за единицу до склада WB и Ozon, оплата по факту выполненных работ по акту.</p></div>
-    <div class="card"><h3>Скорость</h3><p>Приёмка в день поступления, поставка — по ближайшему окну склада.</p></div>
-    <div class="card"><h3>Отчёт по каждой поставке</h3><p>Сколько принято, упаковано, отгружено и забраковано — с фото.</p></div>
-    <div class="card"><h3>Ответственность по договору</h3><p>Договор хранения, акты приёмки и передачи, материальная ответственность за товар.</p></div>
   </div>
 </div></section>
 
@@ -343,7 +352,7 @@ var CFG = {
 </main>
 
 <footer><div class="wrap">
-  <div data-cfg="legal"></div>
+  <div data-cfg="legal">ИП Чечкина Анна Леонидовна, ИНН 183100858169, ОГРНИП 306183103800027</div>
   <div>Склад: Ижевск, ул. 10 лет Октября, 44Б &nbsp; <a data-cfg-phone href="#"></a></div>
   <div>Информация на сайте не является публичной офертой.</div>
 </div></footer>
